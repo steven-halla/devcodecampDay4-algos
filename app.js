@@ -1,46 +1,46 @@
-// function reverseString(string) {
-//  let array = [];
-//  let length = string.length -1;
-//
-//  for (let i = length; i >= 0; i--) {
-//  array.push(string[i]);
-//  }
-//  console.log(array.join(''));
-// }
-//
-// reverseString("hello");
+function reverseString(string) {
+ let array = [];
+ let length = string.length -1;
 
-// function capitalString(string){
-//   let array = string.split(" ");
-//   let newArray = [];
-//
-//   for (let i = 0; i < array.length; i++) {
-//     newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1));
-//   }
-//   return newArray.join(" ");
-// }
-// console.log(capitalString("hatsune miku"));
-//
-// capitalString("hatsune miku");
+ for (let i = length; i >= 0; i--) {
+ array.push(string[i]);
+ }
+ console.log(array.join(''));
+}
 
-// function stringCompression (string) {
-//   if (string.length == 0) {
-//     console.log("Please enter a valid string");
-//     return;
-//   }
-//   let output = "";
-//   let count = 0;
-//   for (var i = 0; i < string.length; i++) {
-//     count++;
-//     if (string[i] != string[i + 1]) {
-//       output += string[i] + count;
-//       count = 0;
-//     }
-//   }
-//   console.log(output);
-// }
-//
-// stringCompression("aaabbaaccddd");
+reverseString("hello");
+
+function capitalString(string){
+  let array = string.split(" ");
+  let newArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1));
+  }
+  return newArray.join(" ");
+}
+console.log(capitalString("hatsune miku"));
+
+capitalString("hatsune miku");
+
+function stringCompression (string) {
+  if (string.length == 0) {
+    console.log("Please enter a valid string");
+    return;
+  }
+  let output = "";
+  let count = 0;
+  for (var i = 0; i < string.length; i++) {
+    count++;
+    if (string[i] != string[i + 1]) {
+      output += string[i] + count;
+      count = 0;
+    }
+  }
+  console.log(output);
+}
+
+stringCompression("aaabbaaccddd");
 
 function isPalindrome(string) {
  const length = string.length;
